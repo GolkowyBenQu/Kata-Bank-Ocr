@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  composer:
+    image: composer:latest
+    volumes:
+      - ./:/var/www
+      - ./:/app
+
+  console:
+    build:
+      context: docker/php-fpm
+    entrypoint: php bin/console
+    user: ${UID}:${GID}
+    volumes:
+      - ./:/var/www

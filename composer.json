@@ -1,0 +1,22 @@
+{
+  "name": "pgolec/kata",
+  "description": "Kata OCR scanner",
+  "type": "project",
+  "require": {
+    "php": "7.4",
+    "symfony/console": "5.x-dev"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "src/"
+    }
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Przemyslaw Golec",
+      "email": "golec.przemyslaw@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev"
+}
